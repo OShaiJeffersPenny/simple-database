@@ -9,18 +9,20 @@
 
    <table border="1px">
 <thead>
-  <tr> <th>First Name</th> <th>Last Name</th> <th>Age</th> <th>Nationality</th> <th>Occupation</th>   </tr>
+  <tr id="head"> <th>First Name</th> <th >Last Name</th> <th >Age</th> <th >Nationality</th> <th >Occupation</th>  <th >Modify</th> </tr>
 </thead>
 <br>
-<tbody>
-  <tr>
-<td>Mike</td>
-<td>Saunders</td>
-<td>17</td>
-<td>Canadian</td>
-<td>Plumber</td>
-<td> <button type="create" name="create"> create</button> </td>
-<td> <button type="delete" name="delete"> delete</button> </td>
+<tbody id="data">
+  <tr class="row">
+<td> <input type="firstName" name="firstName" value="">  </td>
+<td> <input type="lastName" name="lastName" value="">    </td>
+<td> <input type="age" name="age" value="">   </td>
+<td> <input type="nationality" name="nationality" value="">  </td>
+<td> <input type="occupation" name="occupation" value="">    </td>
+<td> <button type="create" name="create" value="create"> create</button> </td>
+<td> <button type="delete" name="delete" value="delete"> delete</button> </td>
+<td> <button type="edit" name="edit" value="edit"> edit</button> </td>
+<td> <button type="submit" name="submit" value="submit"> submit</button> </td>
     </tr>
 </tbody>
 </table>
